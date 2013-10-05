@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include "graphics.h"
 #include <math.h>
-#define ANGLE 0.897597901
-#define LENGTH 60
+#define ANGLE 0.897597901 // the external angle of a heptagon, in radians
+#define LENGTH 60 //the length of a side
 
+
+// given an current angle and a point to begin, it will calculate
+// the x coordinates of the next endpoint of a line.
 int nextX(double angle, int length, int thisX) {
 	double x = cos(angle);
 	x *= length;
@@ -11,6 +14,8 @@ int nextX(double angle, int length, int thisX) {
 	return (int) x;
 }
 
+// given an current angle and a point to begin, it will calculate
+// the y coordinates of the next endpoint of a line.
 int nextY(double angle, int length, int thisY) {
 	double y = sin(angle);
 	y *= length;
