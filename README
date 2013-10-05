@@ -1,3 +1,4 @@
-This is the first homework / exercise set for the course.
-Most of it is very boring, but the two 'challenge' tasks are to display
-two fractals: a Koch curve and a Mandelbrot set.
+This is the code I've written for the first-year programming course.
+At least, most of it is; some tools are included in order to run the
+programs themselves. For example, graphics.h is a library that creates a
+series of commands for drawapp.jar to execute. 
